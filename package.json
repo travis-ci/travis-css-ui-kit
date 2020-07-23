@@ -1,0 +1,23 @@
+{
+  "name": "travis-css-ui-kit",
+  "version": "0.0.1",
+  "description": "CSS UI Kit for Travis CI applications",
+  "main": "index.js",
+  "scripts": {
+    "build": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artursmirnov/travis-css-ui-kit.git"
+  },
+  "author": {
+    "name": "Artur Smirnov",
+    "email": "mail@artursmirnov.com",
+    "url": "https://github.com/artursmirnov"
+  },
+  "license": "ISC",
+  "homepage": "https://github.com/artursmirnov/travis-css-ui-kit#readme",
+  "dependencies": {
+    "tailwindcss": "^1.5.2"
+  }
+}
