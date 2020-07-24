@@ -6,6 +6,8 @@
   "scripts": {
     "build-icons": "node ./src/scripts/build-icons.js",
     "build": "npm run build-icons",
+    "storybook": "start-storybook -s ./build -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -19,7 +21,13 @@
   "license": "ISC",
   "homepage": "https://github.com/artursmirnov/travis-css-ui-kit#readme",
   "dependencies": {
+    "fs-extra": "^9.0.1",
     "tailwindcss": "^1.5.2",
     "webfont": "^9.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@storybook/html": "^5.3.19",
+    "babel-loader": "^8.1.0"
   }
 }
