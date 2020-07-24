@@ -4,7 +4,8 @@
   "description": "CSS UI Kit for Travis CI applications",
   "main": "index.js",
   "scripts": {
-    "build": ""
+    "build-icons": "node ./src/scripts/build-icons.js",
+    "build": "npm run build-icons",
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   "license": "ISC",
   "homepage": "https://github.com/artursmirnov/travis-css-ui-kit#readme",
   "dependencies": {
-    "tailwindcss": "^1.5.2"
+    "tailwindcss": "^1.5.2",
+    "webfont": "^9.0.0"
   }
 }
