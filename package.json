@@ -3,11 +3,12 @@
   "version": "0.0.1",
   "description": "CSS UI Kit for Travis CI applications",
   "main": "index.js",
+  "files": ["dist"],
   "scripts": {
+    "build-storybook": "build-storybook",
     "build-icons": "node ./src/scripts/build-icons.js",
     "build": "npm run build-icons",
-    "storybook": "start-storybook -s ./build -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook": "start-storybook -s ./build -p 6006"
   },
   "repository": {
     "type": "git",

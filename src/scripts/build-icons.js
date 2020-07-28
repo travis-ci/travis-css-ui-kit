@@ -3,8 +3,8 @@ const fse = require('fs-extra');
 const fs = require('fs');
 const path = require('path');
 
-const fontsDir = path.resolve('./build/fonts');
-const stylesDir = path.resolve('./build/styles');
+const fontsDir = path.resolve('./dist/fonts');
+const stylesDir = path.resolve('./dist/styles');
 fse.ensureDirSync(fontsDir);
 fse.ensureDirSync(stylesDir);
 fse.emptyDirSync(fontsDir);
