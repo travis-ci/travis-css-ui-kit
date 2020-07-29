@@ -2,12 +2,13 @@
   "name": "travis-css-ui-kit",
   "version": "0.0.1",
   "description": "CSS UI Kit for Travis CI applications",
-  "main": "index.js",
-  "files": ["dist"],
+  "main": "main.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build-storybook": "build-storybook",
-    "build-icons": "node ./src/scripts/build-icons.js",
-    "build": "npm run build-icons",
+    "build": "webpack",
     "storybook": "start-storybook -s ./build -p 6006"
   },
   "repository": {
@@ -22,13 +23,20 @@
   "license": "ISC",
   "homepage": "https://github.com/artursmirnov/travis-css-ui-kit#readme",
   "dependencies": {
-    "fs-extra": "^9.0.1",
-    "tailwindcss": "^1.5.2",
-    "webfont": "^9.0.0"
+    "tailwindcss": "^1.5.2"
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",
     "@storybook/html": "^5.3.19",
-    "babel-loader": "^8.1.0"
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "ignore-emit-webpack-plugin": "^2.0.2",
+    "mini-css-extract-plugin": "^0.9.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "webfonts-loader": "^5.2.2",
+    "webpack": "^4.44.0",
+    "webpack-cli": "^3.3.12"
   }
 }
