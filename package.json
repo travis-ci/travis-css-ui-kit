@@ -9,7 +9,8 @@
   "scripts": {
     "build-storybook": "build-storybook",
     "build": "webpack",
-    "storybook": "start-storybook -s ./build -p 6006"
+    "storybook": "start-storybook -s ./dist -p 6006",
+    "start": "npm run build && npm run storybook"
   },
   "repository": {
     "type": "git",

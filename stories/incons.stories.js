@@ -4,6 +4,6 @@ export default {
 
 export const list = () => {
   return `
-    <i class="tc-icon tc-icon-assembla" />
+    <i class="tci-icon tci-icon--assembla" />
   `
 }
