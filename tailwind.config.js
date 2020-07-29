@@ -1,5 +1,16 @@
+const { ENV = 'prod' } = process.env;
+
+console.log(`Envronment: ${ENV}`);
+
 module.exports = {
-  purge: [],
+  purge: {
+    enabled: ENV === 'prod',
+    content: [],
+    css: [
+      './src/styles/utilities/**/*.css',
+      './src/styles/components/**/*.css',
+    ]
+  },
   target: 'relaxed',
   prefix: '',
   important: false,
