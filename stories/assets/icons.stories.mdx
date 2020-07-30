@@ -3,14 +3,14 @@ import { color } from '@storybook/addon-knobs';
 
 <Meta title="Assets/Icons" />
 
-export const template = icon => {
-  const colorValue = color('Color', '#000');
-  return `<i class="tci-icon tci-icon--${icon}" style="color: ${colorValue}" />`;
-};
+export const colorValue = color('Color', '#000');
+
+export const template = icon =>
+  `<i class="tci-icon tci-icon--${icon}" style="color: ${colorValue}" />`;
 
 # List of available Icons
 
-<Preview>
+<Preview withToolbar>
   <Story name="Assembla">{template('assembla')}</Story>
   <Story name="Bitbucket">{template('bitbucket')}</Story>
   <Story name="GitHub">{template('github')}</Story>
