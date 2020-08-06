@@ -4,6 +4,10 @@ import { withKnobs } from '@storybook/addon-knobs';
 import { withHTML } from '@whitespace/storybook-addon-html/html';
 import { withPaddings } from 'storybook-addon-paddings';
 
+// Static assets
+import '../dist/styles/ui-kit.css';
+import '../dist/styles/icons.css';
+
 addDecorator(withA11y);
 addDecorator(withKnobs);
 addDecorator(withHTML);

@@ -8,10 +8,9 @@
   ],
   "scripts": {
     "build-storybook": "build-storybook",
-    "build": "ENV=dev webpack",
-    "build:production": "ENV=prod webpack",
+    "build": "webpack",
     "storybook": "start-storybook -s ./dist -p 6006",
-    "start": "npm run build && npm run storybook"
+    "start": "node start.js"
   },
   "repository": {
     "type": "git",
