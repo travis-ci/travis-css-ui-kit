@@ -60,13 +60,14 @@ module.exports = {
       12: spacing[12],
       16: spacing[16],
       20: spacing[20],
+      100: '100px',
     },
   },
   variants: {},
   plugins: [],
   corePlugins: {
     preflight: true, //  Tailwind's base/reset styles
-    container: false, //  The container component
+    container: true, //  The container component
     accessibility: true, //  The sr-only and not-sr-only utilities
     alignContent: true, //  The align-content utilities like content-between
     alignItems: true, //  The align-items utilities like items-start
@@ -113,18 +114,18 @@ module.exports = {
     fontSmoothing: true, //  The font-smoothing utilities like antialiased
     fontStyle: true, //  The font-style utilities like italic
     fontWeight: true, //  The font-weight utilities like font-bold
-    height: false, //  The height utilities like h-8
+    height: true, //  The height utilities like h-8
     inset: true, //  The inset utilities like top-0
-    justifyContent: false, //  The justify-content utilities like justify-between
+    justifyContent: true, //  The justify-content utilities like justify-between
     letterSpacing: false, //  The letter-spacing utilities like tracking-tight
-    lineHeight: false, //  The line-height utilities like leading-normal
+    lineHeight: true, //  The line-height utilities like leading-normal
     listStylePosition: false, //  The list-style-position utilities like list-inside
     listStyleType: false, //  The list-style-type utilities like list-disc
     margin: true, //  The margin utilities like mt-4
     maxHeight: false, //  The max-height utilities like max-h-screen
     maxWidth: false, //  The max-width utilities like max-w-full
-    minHeight: false, //  The min-height utilities like min-h-screen
-    minWidth: false, //  The min-width utilities like min-w-0
+    minHeight: true, //  The min-height utilities like min-h-screen
+    minWidth: true, //  The min-width utilities like min-w-0
     objectFit: false, //  The object-fit utilities like object-cover
     objectPosition: false, //  The object-position utilities like object-center
     opacity: true, //  The opacity utilities like opacity-50

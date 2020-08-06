@@ -34,7 +34,22 @@ module.exports = {
         test: /\.font\.js$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'webfonts-loader'],
       },
+      {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 100000,
+            },
+          },
+        ],
+      },
     ],
+  },
+  performance: {
+    maxAssetSize: 1000000,
+    maxEntrypointSize: 1000000,
   },
   optimization: {
     minimizer: [new OptimizeCSSAssetsPlugin({})],

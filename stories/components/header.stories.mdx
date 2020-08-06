@@ -2,8 +2,38 @@ import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
 
 <Meta title="Components/Header" />
 
-export const template = () => `<div class="tci-header"></div>`;
+## Default header
 
 <Preview>
-  <Story name="Default">{template()}</Story>
+  <Story name="Default">
+    {`
+      <div class="tci-header">
+        <div class="tci-header-logo"></div>
+      </div>
+    `}
+  </Story>
+</Preview>
+
+## Header with disabled logo hover
+
+<Preview>
+  <Story name="Without logo hover">
+    {`
+      <div class="tci-header">
+        <div class="tci-header-logo tci-header-logo--disable-hover"></div>
+      </div>
+    `}
+  </Story>
+</Preview>
+
+## Header with logo in hovered state via class name
+
+<Preview>
+  <Story name="With hovered logo">
+    {`
+      <div class="tci-header">
+        <div class="tci-header-logo tci-header-logo--disable-hover tci-header-logo--hover"></div>
+      </div>
+    `}
+  </Story>
 </Preview>

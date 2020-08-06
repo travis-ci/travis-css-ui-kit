@@ -1,0 +1,23 @@
+.tci-header {
+  @apply flex flex-no-wrap flex-row bg-gray-200 w-full px-1 sticky;
+
+  &--static {
+    @apply static;
+  }
+}
+
+.tci-header-logo {
+  @apply inline-block relative;
+  @apply w-100 h-16;
+  @apply text-gray-600;
+  @apply transition-all duration-150;
+  @apply cursor-pointer;
+  @apply bg-center bg-no-repeat;
+  background-image: url('../images/logos/travis-logo.svg');
+
+  &--hover,
+  &:not(&--disable-hover):hover {
+    @apply bg-orange-100;
+    background-image: url('../images/logos/travis-logo-hover.svg');
+  }
+}
