@@ -33,7 +33,7 @@
 
   &--hover,
   &:not(&--disable-hover):hover {
-    @apply bg-orange-100;
+    @apply bg-creme-100;
     background-image: url('../images/logos/travis-logo-hover.svg');
   }
 }

@@ -1,0 +1,32 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+import resolveConfig from 'tailwindcss/resolveConfig';
+import tailwindConfig from '../../tailwind.config.js';
+
+export const colorsConfig = resolveConfig(tailwindConfig).theme.colors;
+
+export const colors = Object.entries(colorsConfig).reduce((colors, current) => {
+  const name = current[0];
+  const value = current[1];
+  if (typeof value === 'object') {
+    colors = colors.concat(Object.keys(value).map(i => `${name}-${i}`));
+  } else {
+    colors.push(name);
+  }
+  return colors;
+}, []);
+
+<Meta title="Design System/Colors" />
+
+export const colorTemplate = color =>
+  `
+    <div class="inline-flex flex-col flex-no-wrap justify-center m-3 w-1/5 items-center border rounded border-black overflow-hidden">
+      <div class="bg-${color} p-3 w-full text-black text-center whitespace-no-wrap">bg-${color}</div>
+      <div class="text-${color} p-3">text-${color}</div>
+    </div>
+  `;
+
+### List of available colors
+
+<Preview>
+  <Story name="List">{colors.map((color, index) => colorTemplate(color)).join('')}</Story>
+</Preview>

@@ -33,9 +33,11 @@ module.exports = {
         400: '#edde3f', // $canary-yellow
         600: '#cdb62c', // $dozer-yellow
       },
-      orange: {
+      creme: {
         100: '#fafaf8', // $cream-light
-        150: '#eff0ec', // $cream-dark
+        200: '#eff0ec', // $cream-dark
+      },
+      orange: {
         600: '#ed7d5b', // $brick-orange
       },
       red: {
