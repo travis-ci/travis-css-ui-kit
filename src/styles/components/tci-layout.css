@@ -1,0 +1,26 @@
+/*
+.tci-layout
+.tci-layout--narrow
+.tci-layout--wide
+.tci-layout--full
+*/
+
+@responsive {
+  .tci-layout {
+    @apply block;
+    @apply px-2 mx-auto;
+    @apply w-full max-w-screen-lg;
+
+    .tci-layout--narrow {
+      @apply max-w-screen-md;
+    }
+
+    .tci-layout--wide {
+      @apply max-w-screen-xl;
+    }
+
+    .tci-layout--full {
+      @apply max-w-full;
+    }
+  }
+}

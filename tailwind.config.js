@@ -62,8 +62,17 @@ module.exports = {
       20: spacing[20],
       100: '100px',
     },
+    container: {
+      center: true,
+      padding: {
+        default: '1rem',
+        sm: '2rem',
+      },
+    },
   },
-  variants: {},
+  variants: {
+    maxWidth: ['responsive'],
+  },
   plugins: [],
   corePlugins: {
     preflight: true, //  Tailwind's base/reset styles
@@ -122,8 +131,8 @@ module.exports = {
     listStylePosition: false, //  The list-style-position utilities like list-inside
     listStyleType: false, //  The list-style-type utilities like list-disc
     margin: true, //  The margin utilities like mt-4
-    maxHeight: false, //  The max-height utilities like max-h-screen
-    maxWidth: false, //  The max-width utilities like max-w-full
+    maxHeight: true, //  The max-height utilities like max-h-screen
+    maxWidth: true, //  The max-width utilities like max-w-full
     minHeight: true, //  The min-height utilities like min-h-screen
     minWidth: true, //  The min-width utilities like min-w-0
     objectFit: false, //  The object-fit utilities like object-cover
