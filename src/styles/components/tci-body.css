@@ -1,3 +1,7 @@
+/*
+.tci-body
+*/
+
 .tci-body {
   @apply font-sans text-gray-600;
 }
