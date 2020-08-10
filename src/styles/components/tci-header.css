@@ -1,8 +1,23 @@
+/*
+.tci-header
+.tci-header--static
+.tci-header-logo
+.tci-header-logo--hover
+.tci-header-logo--disable-hover
+*/
+
 .tci-header {
-  @apply flex flex-no-wrap flex-row bg-gray-200 w-full px-1 sticky;
+  @apply flex flex-no-wrap flex-row;
+  @apply bg-gray-200;
+  @apply w-full;
+  @apply sticky;
 
   &--static {
     @apply static;
+  }
+
+  .container {
+    @apply flex flex-no-wrap flex-row;
   }
 }
 

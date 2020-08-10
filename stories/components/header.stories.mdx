@@ -2,10 +2,10 @@ import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
 
 <Meta title="Components/Header" />
 
-## Default header
+### Default header
 
 <Preview>
-  <Story name="Default">
+  <Story name="Default" height="150px">
     {`
       <div class="tci-header">
         <div class="tci-header-logo"></div>
@@ -14,10 +14,10 @@ import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
   </Story>
 </Preview>
 
-## Header with disabled logo hover
+### Header with disabled logo hover
 
 <Preview>
-  <Story name="Without logo hover">
+  <Story name="Without logo hover" height="150px">
     {`
       <div class="tci-header">
         <div class="tci-header-logo tci-header-logo--disable-hover"></div>
@@ -26,13 +26,27 @@ import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
   </Story>
 </Preview>
 
-## Header with logo in hovered state via class name
+### Header with logo in hovered state via class name
 
 <Preview>
-  <Story name="With hovered logo">
+  <Story name="With hovered logo" height="150px">
     {`
       <div class="tci-header">
         <div class="tci-header-logo tci-header-logo--disable-hover tci-header-logo--hover"></div>
+      </div>
+    `}
+  </Story>
+</Preview>
+
+### Header with container (fixed width screens)
+
+<Preview>
+  <Story name="With container" height="150px">
+    {`
+      <div class="tci-header">
+        <div class="container">
+          <div class="tci-header-logo"></div>
+        </div>
       </div>
     `}
   </Story>
