@@ -16,7 +16,8 @@
     @apply static;
   }
 
-  .container {
+  .container,
+  .tci-layout {
     @apply flex flex-no-wrap flex-row;
   }
 }

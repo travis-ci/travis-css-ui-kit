@@ -10,17 +10,17 @@
     @apply block;
     @apply px-2 mx-auto;
     @apply w-full max-w-screen-lg;
+  }
 
-    .tci-layout--narrow {
-      @apply max-w-screen-md;
-    }
+  .tci-layout--narrow {
+    @apply max-w-screen-md;
+  }
 
-    .tci-layout--wide {
-      @apply max-w-screen-xl;
-    }
+  .tci-layout--wide {
+    @apply max-w-screen-xl;
+  }
 
-    .tci-layout--full {
-      @apply max-w-full;
-    }
+  .tci-layout--full {
+    @apply max-w-full;
   }
 }
