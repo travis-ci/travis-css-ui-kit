@@ -13,7 +13,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      sans: ['"Source Sans Pro"', 'Helvetica', 'Arial', 'sans-serif'],
+      sans: ['"Source Sans Pro"', 'Helvetica', 'sans-serif'],
       mono: ['Cousine', 'Menlo', 'monospace'],
       icon: ['tci-icons'],
     },
@@ -133,7 +133,7 @@ module.exports = {
     height: true, //  The height utilities like h-8
     inset: true, //  The inset utilities like top-0
     justifyContent: true, //  The justify-content utilities like justify-between
-    letterSpacing: false, //  The letter-spacing utilities like tracking-tight
+    letterSpacing: true, //  The letter-spacing utilities like tracking-tight
     lineHeight: true, //  The line-height utilities like leading-normal
     listStylePosition: false, //  The list-style-position utilities like list-inside
     listStyleType: false, //  The list-style-type utilities like list-disc

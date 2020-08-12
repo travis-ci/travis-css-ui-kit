@@ -1,0 +1,38 @@
+/*
+.tci-text
+.tci-text--title
+.tci-text--subtitle
+.tci-text--section-title
+.tci-text--mono
+.tci-text--gutters
+*/
+
+.tci-text {
+  @apply font-sans text-gray-600 antialiased;
+}
+
+.tci-text--title {
+  @apply tci-text;
+  @apply text-5xl font-hairline;
+  @apply text-teal-600;
+}
+
+.tci-text--subtitle {
+  @apply tci-text;
+  @apply text-3xl font-thin;
+}
+
+.tci-text--section-title {
+  @apply tci-text;
+  @apply text-xl font-thin;
+  @apply text-teal-600;
+}
+
+.tci-text--mono {
+  @apply tci-text;
+  @apply font-mono;
+}
+
+.tci-text--gutters {
+  @apply pb-5;
+}
