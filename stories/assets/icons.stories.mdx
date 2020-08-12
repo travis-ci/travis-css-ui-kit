@@ -1,12 +1,8 @@
 import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
-import { color } from '@storybook/addon-knobs';
 
 <Meta title="Assets/Icons" />
 
-export const colorValue = color('Color', '#000');
-
-export const template = icon =>
-  `<i class="tci-icon tci-icon--${icon}" style="color: ${colorValue}" />`;
+export const template = icon => `<i class="tci-icon tci-icon--${icon}" />`;
 
 # List of available Icons
 
