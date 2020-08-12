@@ -11,6 +11,9 @@ module.exports = {
         outline: '0 0 0 4px rgba(62, 170, 175, 0.3)',
         inner: 'inset 0 0 4px 0 rgba(0, 0, 0, 0.06)',
       },
+      fontSize: {
+        xxs: '0.6rem',
+      },
     },
     fontFamily: {
       sans: ['"Source Sans Pro"', 'Helvetica', 'sans-serif'],
@@ -19,6 +22,7 @@ module.exports = {
     },
     colors: {
       transparent: colors.transparent,
+      current: colors.current,
       black: colors.black,
       white: colors.white,
       gray: {
@@ -55,6 +59,7 @@ module.exports = {
       },
     },
     spacing: {
+      px: '1px',
       0: spacing[0],
       1: spacing[1],
       2: spacing[2],
