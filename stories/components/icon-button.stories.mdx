@@ -1,0 +1,39 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+
+<Meta title="Components/Icon Button" />
+
+### Simple icon button
+
+<Preview>
+  <Story name="Default" height="110px">
+    {`
+      <button class="tci-icon-button tci-icon-button--disable-focus">
+        <i class="tci-icon tci-icon--magnify"></i>
+      </button>
+    `}
+  </Story>
+</Preview>
+
+### Icon button with focus
+
+<Preview>
+  <Story name="Focus" height="110px">
+    {`
+      <button class="tci-icon-button">
+        <i class="tci-icon tci-icon--magnify"></i>
+      </button>
+    `}
+  </Story>
+</Preview>
+
+### Icon button without border
+
+<Preview>
+  <Story name="No border" height="110px">
+    {`
+      <button class="tci-icon-button tci-icon-button--no-border tci-icon-button--disable-focus">
+        <i class="tci-icon tci-icon--magnify"></i>
+      </button>
+    `}
+  </Story>
+</Preview>

@@ -1,6 +1,70 @@
 /*
 .tci-button
+.tci-button--focus
+.tci-button--disable-focus
+
+.tci-button--ripple-50
+.tci-button--ripple-100
+.tci-button--ripple-200
+.tci-button--ripple-300
+.tci-button--ripple-400
+.tci-button--ripple-500
 */
 
 .tci-button {
+  @apply inline-flex justify-center items-center;
+  @apply relative overflow-hidden;
+  @apply uppercase;
+  @apply px-2 h-10;
+  @apply cursor-pointer;
+  @apply rounded;
+
+  &--focus,
+  &:not(&--disable-focus):focus {
+    @apply shadow-outline;
+  }
+  &:focus {
+    @apply outline-none;
+  }
+
+  /* Ripple */
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: currentColor;
+    visibility: hidden;
+    z-index: 2;
+  }
+  &:not(:active):before {
+    animation: ripple-200 0.6s cubic-bezier(0, 0, 0.2, 1);
+    transition: visibility 0.6s step-end;
+  }
+  &:active:before {
+    visibility: visible;
+  }
+}
+
+.tci-button--ripple-50:not(:active):before {
+  animation: ripple-50 0.5s cubic-bezier(0, 0, 0.2, 1);
+}
+.tci-button--ripple-100:not(:active):before {
+  animation: ripple-100 0.5s cubic-bezier(0, 0, 0.2, 1);
+}
+.tci-button--ripple-200:not(:active):before {
+  animation: ripple-200 0.6s cubic-bezier(0, 0, 0.2, 1);
+}
+.tci-button--ripple-300:not(:active):before {
+  animation: ripple-300 0.7s cubic-bezier(0, 0, 0.2, 1);
+}
+.tci-button--ripple-400:not(:active):before {
+  animation: ripple-400 0.8s cubic-bezier(0, 0, 0.2, 1);
+}
+.tci-button--ripple-500:not(:active):before {
+  animation: ripple-500 0.9s cubic-bezier(0, 0, 0.2, 1);
 }

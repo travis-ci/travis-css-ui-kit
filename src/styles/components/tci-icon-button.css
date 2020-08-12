@@ -65,8 +65,8 @@
     z-index: 2;
   }
   &:not(:active):before {
-    animation: ripple 0.8s cubic-bezier(0, 0, 0.2, 1);
-    transition: visibility 0.8s step-end;
+    animation: ripple-50 0.5s cubic-bezier(0, 0, 0.2, 1);
+    transition: visibility 0.5s step-end;
   }
   &:active:before {
     visibility: visible;
