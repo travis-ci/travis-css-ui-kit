@@ -1,0 +1,56 @@
+/*
+.tci-icon-button
+.tci-icon-button .tci-icon
+.tci-icon-button--sm
+.tci-icon-button--sm .tci-icon
+.tci-icon-button--no-border
+.tci-icon-button--hover
+.tci-icon-button--disable-hover
+.tci-icon-button--active
+.tci-icon-button--disable-active
+.tci-icon-button--focus
+.tci-icon-button--disable-focus
+*/
+
+.tci-icon-button {
+  @apply inline-flex justify-center items-center;
+  @apply w-10 h-10;
+  @apply border border-gray-200 rounded-full outline-none;
+  @apply transition-all duration-200;
+
+  &--sm {
+    @apply w-8 h-8;
+
+    .tci-icon {
+      @apply text-lg;
+    }
+  }
+
+  &:not(&--sm) {
+    .tci-icon {
+      @apply text-2xl;
+    }
+  }
+
+  &--no-border {
+    @apply border-0;
+  }
+
+  &--hover,
+  &:not(&--disable-hover):hover {
+    @apply bg-creme-100;
+  }
+
+  &--active,
+  &:not(&--disable-active):active {
+    @apply shadow-inner;
+  }
+
+  &--focus,
+  &:not(&--disable-focus):focus {
+    @apply shadow-outline;
+  }
+  &:focus {
+    @apply outline-none;
+  }
+}

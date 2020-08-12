@@ -2,8 +2,12 @@ import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
 
 <Meta title="Components/Buttons" />
 
-export const template = (label = 'Button') => `<button class="tci-button">${label}</button>`;
-
 <Preview>
-  <Story name="Default">{template()}</Story>
+  <Story name="Icon button - default">
+    {`
+      <button class="tci-icon-button tci-icon-button--disable-focus">
+        <i class="tci-icon tci-icon--magnify"></i>
+      </button>
+    `}
+  </Story>
 </Preview>

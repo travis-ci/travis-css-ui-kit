@@ -22,4 +22,7 @@
     @apply border-gray-400;
     @apply bg-white;
   }
+  &:focus {
+    @apply outline-none;
+  }
 }
