@@ -4,6 +4,8 @@
 .tci-header .container
 .tci-header .tci-layout
 .tci-header .tci-input
+.tci-header .tci-icon-button
+.tci-header .tci-icon-button .tci-icon
 .tci-header-logo
 .tci-header-logo--hover
 .tci-header-logo--disable-hover
@@ -40,13 +42,13 @@
     @apply border-0;
     @apply text-gray-500;
     @apply h-8 w-8 mx-1;
-    @apply text-2xl;
+
+    .tci-icon {
+      @apply text-2xl;
+    }
   }
   .tci-icon-button:hover {
     @apply bg-transparent;
-  }
-  .tci-icon-button:active {
-    @apply bg-gray-300;
   }
 }
 

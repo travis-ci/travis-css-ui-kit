@@ -14,6 +14,8 @@
 
 .tci-icon-button {
   @apply inline-flex justify-center items-center flex-shrink-0;
+  @apply relative;
+  @apply overflow-hidden;
   @apply w-10 h-10;
   @apply border border-gray-200 rounded-full outline-none;
   @apply transition-all duration-200;
@@ -41,16 +43,32 @@
     @apply bg-creme-100;
   }
 
-  &--active,
-  &:not(&--disable-active):active {
-    @apply shadow-inner;
-  }
-
   &--focus,
   &:not(&--disable-focus):focus {
     @apply shadow-outline;
   }
   &:focus {
     @apply outline-none;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: currentColor;
+    visibility: hidden;
+    z-index: 2;
+  }
+  &:not(:active):before {
+    animation: ripple 0.8s cubic-bezier(0, 0, 0.2, 1);
+    transition: visibility 0.8s step-end;
+  }
+  &:active:before {
+    visibility: visible;
   }
 }
