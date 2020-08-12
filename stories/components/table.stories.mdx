@@ -1,0 +1,33 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+
+<Meta title="Components/Table" />
+
+### Default table
+
+<Preview>
+  <Story name="Default" height="150px">
+    {`
+      <table class="tci-table">
+        <thead>
+          <tr>
+            <td>Id</td>
+            <td>Title</td>
+            <td>Description</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Some item</td>
+            <td>Some pretty long description text</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Some other item</td>
+            <td>Another pretty long description text</td>
+          </tr>
+        </tbody>
+      </table>
+    `}
+  </Story>
+</Preview>

@@ -176,7 +176,7 @@ module.exports = {
     visibility: true, //  The visibility utilities like invisible
     whitespace: true, //  The whitespace utilities like whitespace-no-wrap
     width: true, //  The width utilities like w-1/2
-    wordBreak: false, //  The word-break utilities like break-all
+    wordBreak: true, //  The word-break utilities like break-all
     zIndex: true, //  The z-index utilities like z-50
   },
 };
