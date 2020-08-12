@@ -1,6 +1,9 @@
 /*
 .tci-header
 .tci-header--static
+.tci-header .container
+.tci-header .tci-layout
+.tci-header .tci-input
 .tci-header-logo
 .tci-header-logo--hover
 .tci-header-logo--disable-hover
@@ -26,6 +29,11 @@
   .container,
   .tci-layout {
     @apply flex flex-no-wrap flex-row;
+  }
+
+  .tci-input {
+    @apply bg-gray-400;
+    @apply border-0;
   }
 }
 

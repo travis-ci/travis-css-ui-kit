@@ -7,6 +7,9 @@ module.exports = {
       screens: {
         dark: { raw: '(prefers-color-scheme: dark)' },
       },
+      boxShadow: {
+        outline: '0 0 0 4px rgba(62, 170, 175, 0.3)',
+      },
     },
     fontFamily: {
       sans: ['"Source Sans Pro"', 'Helvetica', 'Arial', 'sans-serif'],
@@ -19,10 +22,10 @@ module.exports = {
       gray: {
         100: '#f1f1f1', // $pebble-gray
         200: '#eaeaea', // $dry-cement
+        300: '#d7d7d7',
+        400: '#c7c7c7',
         500: '#9d9d9d', // $cement-grey
         600: '#666666', // $asphalt-grey
-        700: colors.gray[700],
-        800: colors.gray[800],
       },
       green: {
         100: '#deecdc', // $seed-green
@@ -97,7 +100,7 @@ module.exports = {
     borderStyle: true, //  The border-style utilities like border-dashed
     borderWidth: true, //  The border-width utilities like border-2
     boxSizing: false, //  The box-sizing utilities like box-border
-    boxShadow: false, //  The box-shadow utilities like shadow-xl
+    boxShadow: true, //  The box-shadow utilities like shadow-xl
     clear: false, //  The clear utilities like clear-left
     cursor: true, //  The cursor utilities like cursor-pointer
     display: true, //  The display utilities like block
