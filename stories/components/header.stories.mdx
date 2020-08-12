@@ -65,3 +65,32 @@ import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
     `}
   </Story>
 </Preview>
+
+### Header link
+
+<Preview>
+  <Story name="Links" height="150px">
+    {`
+      <div class="tci-header">
+        <div class="tci-header-logo"></div>
+        <div class="tci-header-section">
+          <a href="javascript:void" class="tci-header-link tci-header-link--active">
+            Dashboard
+          </a>
+          <a href="javascript:void" class="tci-header-link">
+            Changelog
+          </a>
+          <a href="javascript:void" class="tci-header-link">
+            Documentation
+          </a>
+        </div>
+        <div class="tci-header-spacer"></div>
+        <div class="tci-header-section tci-header-section--no-padding">
+          <a href="javascript:void" class="tci-header-link">
+            User
+          </a>
+        </div>
+      </div>
+    `}
+  </Story>
+</Preview>

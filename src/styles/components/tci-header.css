@@ -4,6 +4,13 @@
 .tci-header-logo
 .tci-header-logo--hover
 .tci-header-logo--disable-hover
+.tci-header-section
+.tci-header-section--no-padding
+.tci-header-spacer
+.tci-header-link
+.tci-header-link--active
+.tci-header-link--hover
+.tci-header-link--disable-hover
 */
 
 .tci-header {
@@ -23,17 +30,47 @@
 }
 
 .tci-header-logo {
-  @apply inline-block relative;
+  @apply inline-block relative flex-shrink-0;
   @apply w-100 h-16;
   @apply text-gray-600;
   @apply transition-all duration-150;
   @apply cursor-pointer;
-  @apply bg-center bg-no-repeat;
+  @apply bg-no-repeat;
   background-image: url('../images/logos/travis-logo.svg');
+  background-position: 50% 45%;
 
   &--hover,
   &:not(&--disable-hover):hover {
-    @apply bg-creme-100;
+    @apply bg-creme-100 bg-center;
     background-image: url('../images/logos/travis-logo-hover.svg');
+  }
+}
+
+.tci-header-section {
+  @apply flex flex-row flex-no-wrap items-center;
+  @apply px-5;
+
+  &--no-padding {
+    @apply px-0;
+  }
+}
+
+.tci-header-spacer {
+  @apply w-full flex-shrink;
+}
+
+.tci-header-link {
+  @apply inline-flex justify-center items-center;
+  @apply h-16 px-4;
+  @apply transition-all duration-150;
+  @apply cursor-pointer;
+
+  &--hover,
+  &:not(&--disable-hover):hover {
+    @apply bg-gray-100;
+  }
+
+  &--active {
+    @apply bg-creme-100;
   }
 }
