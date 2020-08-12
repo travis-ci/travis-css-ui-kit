@@ -1,0 +1,12 @@
+/*
+.tci-icon
+*/
+
+.tci-icon {
+  @apply inline-flex justify-center items-center;
+  @apply font-icon;
+
+  &:before {
+    @apply font-icon;
+  }
+}

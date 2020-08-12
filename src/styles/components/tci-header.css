@@ -35,6 +35,16 @@
     @apply bg-gray-400;
     @apply border-0;
   }
+
+  .tci-icon-button {
+    @apply border-0;
+  }
+  .tci-icon-button:hover {
+    @apply bg-gray-300;
+  }
+  .tci-icon-button:active {
+    @apply bg-gray-400;
+  }
 }
 
 .tci-header-logo {

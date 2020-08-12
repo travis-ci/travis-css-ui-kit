@@ -14,6 +14,7 @@ module.exports = {
     fontFamily: {
       sans: ['"Source Sans Pro"', 'Helvetica', 'Arial', 'sans-serif'],
       mono: ['Cousine', 'Menlo', 'monospace'],
+      icon: ['tci-icons'],
     },
     colors: {
       transparent: colors.transparent,
