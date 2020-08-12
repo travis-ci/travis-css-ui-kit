@@ -9,6 +9,7 @@ module.exports = {
       },
       boxShadow: {
         outline: '0 0 0 4px rgba(62, 170, 175, 0.3)',
+        inner: 'inset 0 0 4px 0 rgba(0, 0, 0, 0.06)',
       },
     },
     fontFamily: {

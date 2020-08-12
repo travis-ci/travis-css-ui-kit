@@ -120,7 +120,31 @@ import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
         <div class="tci-header-section">
           <button class="tci-icon-button tci-icon-button--disable-focus">
             <i class="tci-icon tci-icon--magnify"></i>
-          </button
+          </button>
+        </div>
+      </div>
+    `}
+  </Story>
+</Preview>
+
+### Complex example
+
+<Preview>
+  <Story name="Complex example" height="150px">
+    {`
+      <div class="tci-header">
+        <div class="tci-header-logo"></div>
+        <div class="tci-header-section w-1/3 max-w-xs">
+          <input type="text" class="tci-input tci-input--sm" />
+          <button class="tci-icon-button tci-icon-button--disable-focus">
+            <i class="tci-icon tci-icon--magnify"></i>
+          </button>
+        </div>
+        <div class="tci-header-spacer"></div>
+        <div class="tci-header-section tci-header-section--no-padding">
+          <a href="javascript:void" class="tci-header-link">
+            User
+          </a>
         </div>
       </div>
     `}

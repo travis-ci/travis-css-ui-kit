@@ -13,7 +13,7 @@
 */
 
 .tci-icon-button {
-  @apply inline-flex justify-center items-center;
+  @apply inline-flex justify-center items-center flex-shrink-0;
   @apply w-10 h-10;
   @apply border border-gray-200 rounded-full outline-none;
   @apply transition-all duration-200;
