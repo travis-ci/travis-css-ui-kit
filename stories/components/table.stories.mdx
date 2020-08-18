@@ -13,6 +13,7 @@ import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
             <td>Id</td>
             <td>Title</td>
             <td>Description</td>
+            <td>Actions</td>
           </tr>
         </thead>
         <tbody>
@@ -20,11 +21,27 @@ import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
             <td>1</td>
             <td>Some item</td>
             <td>Some pretty long description text</td>
+            <td>
+              <button class="tci-button tci-button--disable-focus tci-button--primary tci-button--xs">
+                Activate
+              </button>
+              <button class="tci-button tci-button--disable-focus tci-button--xs text-red-600">
+                Delete
+              </button>
+            </td>
           </tr>
           <tr>
             <td>2</td>
             <td>Some other item</td>
             <td>Another pretty long description text</td>
+            <td>
+              <button class="tci-button tci-button--disable-focus tci-button--xs">
+                Activate
+              </button>
+              <button class="tci-button tci-button--disable-focus tci-button--xs text-red-600">
+                Delete
+              </button>
+            </td>
           </tr>
         </tbody>
       </table>
