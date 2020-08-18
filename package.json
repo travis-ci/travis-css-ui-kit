@@ -6,9 +6,6 @@
   "files": [
     "dist"
   ],
-  "np": {
-    "contents": "dist"
-  },
   "scripts": {
     "build-storybook": "build-storybook",
     "build": "webpack",
