@@ -36,6 +36,10 @@ import clsx from 'clsx';
       },
       description: 'Size of the ripple effect',
     },
+    hover: {
+      control: 'boolean',
+      description: 'Enable hover effect',
+    },
     focus: {
       control: 'boolean',
       description: 'Enable focus effect',
@@ -47,6 +51,7 @@ export const Template = args => {
   const classes = clsx({
     'tci-button': true,
     'tci-button--disable-focus': !args.focus,
+    'tci-button--disable-hover': !args.hover,
     'tci-button--ripple-50': args.ripple === 50,
     'tci-button--ripple-100': args.ripple === 100,
     'tci-button--ripple-200': args.ripple === 200,
@@ -82,6 +87,7 @@ export const Template = args => {
       color: 'default',
       size: 'default',
       ripple: 'default',
+      hover: true,
       focus: false,
     }}
   >

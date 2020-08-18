@@ -48,7 +48,7 @@
     }
   }
   .tci-icon-button:hover {
-    @apply bg-transparent;
+    @apply bg-transparent-0;
   }
 }
 

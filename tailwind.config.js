@@ -14,6 +14,9 @@ module.exports = {
       fontSize: {
         xxs: '0.6rem',
       },
+      opacity: {
+        10: '.1',
+      },
     },
     fontFamily: {
       sans: ['"Source Sans Pro"', 'Helvetica', 'sans-serif'],
@@ -21,7 +24,6 @@ module.exports = {
       icon: ['tci-icons'],
     },
     colors: {
-      transparent: colors.transparent,
       current: colors.current,
       black: colors.black,
       white: colors.white,
@@ -56,6 +58,10 @@ module.exports = {
       teal: {
         200: '#b6d6d9', // $agate-blue
         600: '#3eaaaf', // $oxide-blue
+      },
+      transparent: {
+        0: 'transparent',
+        100: 'rgba(0, 0, 0, 0.1)',
       },
     },
     spacing: {

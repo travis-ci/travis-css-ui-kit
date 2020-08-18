@@ -2,6 +2,8 @@
 .tci-button
 .tci-button--focus
 .tci-button--disable-focus
+.tci-button--hover
+.tci-button--disable-hover
 .tci-button--primary
 .tci-button--secondary
 .tci-button--bright
@@ -25,7 +27,6 @@
   @apply px-5 h-10;
   @apply cursor-pointer;
   @apply rounded;
-  @apply text-gray-600;
   @apply transition-all duration-150;
 
   &:not(&--link) {
@@ -38,6 +39,19 @@
   }
   &:focus {
     @apply outline-none;
+  }
+
+  &:after {
+    content: '';
+    @apply absolute inset-0;
+    @apply bg-current;
+    @apply opacity-0;
+    @apply transition-all duration-300;
+  }
+
+  &--hover,
+  &:not(&--disable-hover):not(&--link):hover:after {
+    @apply opacity-10;
   }
 
   &--primary {
