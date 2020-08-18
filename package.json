@@ -2,15 +2,23 @@
   "name": "travis-css-ui-kit",
   "version": "0.0.1",
   "description": "CSS UI Kit for Travis CI applications",
-  "main": "main.js",
+  "main": "dist/styles/ui-kit.css",
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "np": {
+    "contents": "dist"
+  },
   "scripts": {
     "build-storybook": "build-storybook",
     "build": "webpack",
     "storybook": "start-storybook -s ./dist -p 6006",
-    "start": "node start.js"
+    "start": "node start.js",
+    "test": "echo \"No test specified\"",
+    "release": "np"
   },
   "repository": {
     "type": "git",
@@ -37,6 +45,7 @@
     "copy-webpack-plugin": "6.0.3",
     "ignore-emit-webpack-plugin": "^2.0.2",
     "mini-css-extract-plugin": "0.10.0",
+    "np": "6.4.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss-import": "^12.0.1",
     "postcss-loader": "^3.0.0",
