@@ -2,7 +2,15 @@
 .tci-button
 .tci-button--focus
 .tci-button--disable-focus
-
+.tci-button--primary
+.tci-button--secondary
+.tci-button--bright
+.tci-button--outline
+.tci-button--filled
+.tci-button--link
+.tci-button--xs
+.tci-button--sm
+.tci-button--lg
 .tci-button--ripple-50
 .tci-button--ripple-100
 .tci-button--ripple-200
@@ -14,10 +22,15 @@
 .tci-button {
   @apply inline-flex justify-center items-center;
   @apply relative overflow-hidden;
-  @apply uppercase;
-  @apply px-2 h-10;
+  @apply px-5 h-10;
   @apply cursor-pointer;
   @apply rounded;
+  @apply text-gray-600;
+  @apply transition-all duration-150;
+
+  &:not(&--link) {
+    @apply uppercase;
+  }
 
   &--focus,
   &:not(&--disable-focus):focus {
@@ -25,6 +38,61 @@
   }
   &:focus {
     @apply outline-none;
+  }
+
+  &--primary {
+    @apply text-teal-600;
+  }
+
+  &--secondary {
+    @apply text-gray-600;
+  }
+
+  &--bright {
+    @apply text-green-600;
+  }
+
+  &--outline {
+    @apply border border-current;
+  }
+
+  &--filled,
+  &--filled&--secondary {
+    @apply bg-gray-200 text-gray-600;
+  }
+
+  &--filled&--primary {
+    @apply bg-teal-600 text-white;
+  }
+
+  &--filled&--bright {
+    @apply bg-green-600 text-white;
+  }
+
+  &--link {
+    @apply px-0 h-5;
+    @apply border-b border-gray-300 rounded-none;
+  }
+  &--link:hover {
+    @apply border-current border-b-2;
+  }
+  &--link:active {
+    @apply border-gray-300 text-gray-300;
+  }
+
+  &--sm {
+    @apply h-8 px-3;
+    @apply text-sm;
+  }
+
+  &--xs {
+    @apply h-6 px-2;
+    @apply text-xs;
+  }
+
+  &--lg {
+    @apply h-12 px-6;
+    @apply text-lg;
   }
 
   /* Ripple */
@@ -45,7 +113,7 @@
     animation: ripple-200 0.6s cubic-bezier(0, 0, 0.2, 1);
     transition: visibility 0.6s step-end;
   }
-  &:active:before {
+  &:not(&--link):active:before {
     visibility: visible;
   }
 }
