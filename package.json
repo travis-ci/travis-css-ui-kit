@@ -1,6 +1,6 @@
 {
   "name": "travis-css-ui-kit",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "CSS UI Kit for Travis CI applications",
   "main": "dist/styles/ui-kit.css",
   "files": [
