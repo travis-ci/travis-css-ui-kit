@@ -1,0 +1,84 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+import clsx from 'clsx';
+
+<Meta
+  title="Components/Pagination"
+  argTypes={{
+    gaps: {
+      control: 'boolean',
+      description: 'Show/hide gaps',
+    },
+    prevLabel: {
+      control: 'text',
+      description: 'Label for the Previous button',
+    },
+    disablePrev: {
+      control: 'boolean',
+      description: 'Disable Previous button',
+    },
+    nextLabel: {
+      control: 'text',
+      description: 'Label for Next button',
+    },
+    disableNext: {
+      control: 'boolean',
+      description: 'Disable Next button',
+    },
+  }}
+/>
+
+export const Template = args => {
+  const navClasses = clsx({
+    'tci-pagination': true,
+  });
+  const linkClasses = clsx({
+    'tci-pagination-page': true,
+  });
+  const prevClasses = clsx({
+    'tci-pagination-prev': true,
+    'tci-pagination-prev--disabled': !!args.disablePrev,
+  });
+  const nextClasses = clsx({
+    'tci-pagination-next': true,
+    'tci-pagination-next--disabled': !!args.disableNext,
+  });
+  const gapClasses = clsx({
+    'tci-pagination-gap': true,
+    'tci-pagination-gap--disabled': !args.gaps,
+  });
+  return `
+    <nav class="${navClasses}">
+      <a href="javascript:void" class="${prevClasses}">${args.prevLabel}</a>
+      <a href="javascript:void" class="${linkClasses}">1</a>
+      <a href="javascript:void" class="${gapClasses}"></a>
+      <a href="javascript:void" class="${linkClasses}">5</a>
+      <a href="javascript:void" class="${linkClasses} tci-pagination-page--current">6</a>
+      <a href="javascript:void" class="${linkClasses}">7</a>
+      <a href="javascript:void" class="${gapClasses}"></a>
+      <a href="javascript:void" class="${linkClasses}">13</a>
+      <a href="javascript:void" class="${nextClasses}">${args.nextLabel}</a>
+    </nav>
+  `;
+};
+
+### Default
+
+<Preview>
+  <Story
+    name="Playground"
+    height="110px"
+    args={{
+      gaps: true,
+      disablePrev: true,
+      disableNext: false,
+      prevLabel: 'Prev',
+      nextLabel: 'Next',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Preview>
+
+### Left icon
+
+### Right icon

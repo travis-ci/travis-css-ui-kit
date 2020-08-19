@@ -1,13 +1,14 @@
 /*
 .tci-button
 .tci-button--focus
-.tci-button--disable-focus
+.tci-button--enable-focus
 .tci-button--hover
 .tci-button--disable-hover
 .tci-button--primary
 .tci-button--secondary
 .tci-button--bright
 .tci-button--outline
+.tci-button--light-outline
 .tci-button--filled
 .tci-button--link
 .tci-button--xs
@@ -34,7 +35,7 @@
   }
 
   &--focus,
-  &:not(&--disable-focus):focus {
+  &--enable-focus:focus {
     @apply shadow-outline;
   }
   &:focus {
@@ -68,6 +69,10 @@
 
   &--outline {
     @apply border border-current;
+  }
+
+  &--light-outline {
+    @apply border border-gray-200;
   }
 
   &--filled,
